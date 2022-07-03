@@ -11,7 +11,7 @@ import Email from './pages/Email';
 function App() {
 
   return (
-    <>
+    <div className='container'>
       <Router>
         <Navbar />
 
@@ -24,7 +24,7 @@ function App() {
         </Routes>
 
       </Router>
-    </>
+    </div>
   )
 }
 

@@ -10,14 +10,14 @@ function Navbar() {
     <>
       <div className='navbar'>
         <Link to={'#'} className='menu-bar'>
-          <i class="bi bi-hand-index" onClick={showSidebar}></i>
+          <i className="bi bi-hand-index" onClick={showSidebar}></i>
         </Link>
       </div>
       <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
         <ul className='nav-menu-item' onClick={showSidebar}>
           <li className='navbar-toggle'>
             <Link to={'#'} className='menu-bar'>
-              <i class="bi bi-x-square" ></i>
+              <i className="bi bi-x-square" ></i>
             </Link>
           </li>
           {Sidebar.map((elem, index) => {

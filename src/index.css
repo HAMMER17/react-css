@@ -1,6 +1,53 @@
 /* @import 'bootstrap'; */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
+@media screen and (max-width: 580px) {
+
+  .home,
+  .githab,
+  .twitter,
+  .phone,
+  .email {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    height: 20vh;
+    color: blue;
+    text-transform: uppercase;
+    text-shadow: 0 0 30px black, 0 0 15px black, 30px 30px 10px black;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .form input {
+    width: 250px;
+  }
+
+  .button {
+    width: 70px;
+  }
+
+  .navbar {
+    height: 40px;
+  }
+
+  .menu-bar {
+    font-size: 1rem;
+  }
+
+  .nav-menu {
+    height: 100vh;
+    width: 100px;
+
+  }
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +63,7 @@
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  height: 50vh;
+  height: 40vh;
   color: blue;
   text-transform: uppercase;
   text-shadow: 0 0 30px black,
@@ -26,4 +73,45 @@
 
 h1 {
   margin-left: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 150px; */
+  flex-direction: column;
+  color: blue;
+  text-shadow: 0 0 20px black, 0 0 10px black, 15px 10px 4px black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input {
+  display: block;
+  height: 40px;
+  width: 500px;
+  margin: 20px;
+  border-radius: 10px;
+  /* border: 3px solid blue; */
+  padding: 10px;
+  box-shadow: 0 0 10px blue, 0 0 10px blue, 10px 10px 20px blue;
+  background-color: black;
+  color: white;
+}
+
+.button {
+  width: 200px;
+  height: 30px;
+  background: blue;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black, 0 0 20px black, 10px 10px 10px black;
+  margin-top: 20px;
+}
+
+.click {
+  margin-left: 500px;
+
 }
