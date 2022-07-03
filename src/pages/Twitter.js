@@ -8,11 +8,14 @@ function Twitter() {
     setChat([...chat, val], setVal(''))
     console.log(val)
   }
+  function del(id) {
+    setChat(chat.filter(el => el !== id))
+  }
   const result = chat.map((el, i) => {
     if (i % 2 === 0) {
-      return <li key={i} className='key'>{el}</li>
+      return <li key={i} className='key'>{el}<i className="bi bi-x x" onClick={() => del(el)}></i></li>
     } else
-      return <li key={i} className='key2'>{el}</li>
+      return <li key={i} className='key2'>{el}<i className="bi bi-x x" onClick={() => del(el)}></i></li>
 
   })
   return (
