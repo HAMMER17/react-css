@@ -6,14 +6,18 @@ import Githab from './pages/Githab';
 import Twitter from './pages/Twitter';
 import Phone from './pages/Phone';
 import Email from './pages/Email';
-
+import Louder from './pages/Louder';
 
 function App() {
-
+  const [theme, setTheme] = React.useState('theme' ? 'dark' : 'ligth')
+  const dataTheme = () => {
+    const newTheme = theme === 'ligth' ? 'dark' : 'ligth'
+    setTheme(newTheme)
+  }
   return (
-    <div className='container'>
+    <div className='container' data-theme={theme}>
       <Router>
-        <Navbar />
+        <Navbar theme={dataTheme} />
 
         <Routes>
           <Route path='/' element={<Home />}></Route>
@@ -21,6 +25,7 @@ function App() {
           <Route path='/twitter' element={<Twitter />}></Route>
           <Route path='/phone' element={<Phone />}></Route>
           <Route path='/email' element={<Email />}></Route>
+          <Route path='/louder' element={<Louder />} />
         </Routes>
 
       </Router>

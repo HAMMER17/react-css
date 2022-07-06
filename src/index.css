@@ -1,5 +1,6 @@
 /* @import 'bootstrap'; */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Lobster&family=Russo+One&family=Ubuntu+Mono:ital@1&display=swap');
 
 @media screen and (max-width: 580px) {
 
@@ -18,6 +19,7 @@
     text-transform: uppercase;
     text-shadow: 0 0 30px black, 0 0 15px black, 30px 30px 10px black;
     font-weight: 400;
+
   }
 
   h1 {
@@ -81,7 +83,8 @@
 .githab,
 .twitter,
 .phone,
-.email {
+.email,
+.louder1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,6 +135,7 @@ input {
   border-radius: 10px;
   box-shadow: 0 0 20px black, 0 0 20px black, 10px 10px 10px black;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .click {
@@ -173,4 +177,17 @@ input {
   margin-left: 10px;
   font-size: 15px;
   font-weight: 800;
+  cursor: pointer;
+}
+
+.louder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-theme='dark'] {
+  background: greenyellow;
+  color: red;
+  height: 100vh;
 }

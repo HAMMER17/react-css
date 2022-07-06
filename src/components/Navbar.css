@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter&family=Courgette&family=Dancing+Script&family=Lobster&family=Russo+One&family=Ubuntu+Mono:ital@1&display=swap');
+
 .navbar {
   background-color: black;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -22,6 +24,8 @@
   top: 0;
   transition: 1s;
   left: -100%;
+  font-family: 'Courgette', cursive;
+  ;
 }
 
 .nav-menu.active {
@@ -63,7 +67,7 @@
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -74,4 +78,18 @@ span {
 i:hover {
   color: red;
   font-size: 30px;
+}
+
+.time {
+  color: blueviolet;
+  margin-left: 500px;
+}
+
+#theme {
+  margin-left: 600px;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  background: blueviolet;
+  border: 1px solid black;
 }

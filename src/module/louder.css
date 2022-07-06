@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Lobster&family=Russo+One&family=Ubuntu+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter&family=Dancing+Script&family=Lobster&family=Russo+One&family=Ubuntu+Mono:ital@1&display=swap');
+
+.post {
+  column-count: 2;
+  text-align: center;
+  padding: 10px;
+  color: blue;
+  list-style: none;
+
+}
+
+li {
+  margin: 5px;
+  font-size: 20px;
+  /* border-bottom: black; */
+  text-shadow: 0 0 20px black, 0 0 30px black, 10px 10px 5px black;
+  font-weight: 600;
+
+}
+
+.blue {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.red {
+
+  margin: 10px;
+  color: red;
+  font-family: 'Comforter', cursive;
+}

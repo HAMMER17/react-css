@@ -1,3 +1,4 @@
+
 const Sidebar = [
   {
     title: 'Home',
@@ -27,6 +28,12 @@ const Sidebar = [
     title: 'Email',
     path: '/email',
     icon: <i className="bi bi-envelope-fill"></i>,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Louder',
+    path: '/louder',
+    icon: <i className="bi bi-apple"></i>,
     cName: 'nav-text'
   },
 ]
