@@ -2,6 +2,24 @@ import React from 'react'
 import '../module/clock.css'
 
 const Githab = () => {
+
+  const [hour, setHour] = React.useState()
+  const [minute, setMinute] = React.useState()
+  const [sec, setSec] = React.useState()
+
+  function Clock() {
+    const data = new Date()
+    setHour(data.getHours() * 30)
+    setMinute(data.getMinutes() * 6)
+    setSec(data.getSeconds() * 6)
+  }
+
+  React.useEffect(() => {
+    setInterval(() => {
+      Clock()
+    }, 1000)
+  }, [])
+
   let res = []
   for (let i = 1; i < 13; i++) {
     res.push(<div key={i} className={`num num${i}`}>{i}</div>)
@@ -14,9 +32,9 @@ const Githab = () => {
       </div>
       <div className='div'>
         <div className='clock'>
-          <div className='hand hour'></div>
-          <div className='hand minute'></div>
-          <div className='hand second'></div>
+          <div className='hand hour' style={{ transform: `translate(-50%) rotate(${hour + (minute / 12)}deg)` }}></div>
+          <div className='hand minute' style={{ transform: `translate(-50%) rotate(${minute}deg)` }}></div>
+          <div className='hand second' style={{ transform: `translate(-50%) rotate(${sec}deg)` }}></div>
 
           {/* <div className="num num1">1</div>
           <div className="num num2">2</div>

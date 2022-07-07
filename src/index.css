@@ -95,6 +95,7 @@
   text-shadow: 0 0 30px black,
     0 0 15px black, 30px 30px 10px black;
   font-weight: 600;
+  /* font-family: 'Courgette', cursive; */
 }
 
 h1 {
@@ -186,8 +187,14 @@ input {
   align-items: center;
 }
 
+.timer {
+  font-size: 50px;
+  font-family: 'Courgette', cursive;
+  margin-left: 300px;
+  text-shadow: 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 10px 20px 5px blue;
+}
+
 [data-theme='dark'] {
-  background: greenyellow;
-  color: red;
+  background: grey;
   height: 100vh;
 }

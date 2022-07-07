@@ -24,7 +24,7 @@
   top: 0;
   transition: 1s;
   left: -100%;
-  font-family: 'Courgette', cursive;
+  font-family: 'Bebas Neue', cursive;
   ;
 }
 
@@ -77,11 +77,11 @@ span {
 
 i:hover {
   color: red;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .time {
-  color: blueviolet;
+  color: blue;
   margin-left: 500px;
 }
 
@@ -90,6 +90,6 @@ i:hover {
   width: 150px;
   height: 30px;
   border-radius: 10px;
-  background: blueviolet;
+  background: blue;
   border: 1px solid black;
 }
